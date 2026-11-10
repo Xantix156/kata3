@@ -1,6 +1,8 @@
 package software.ulpgc.katas;
 
 import software.ulpgc.katas.io.adapters.HttpRandomUserReader;
+import software.ulpgc.katas.io.adapters.JsonRandomUserDeserializer;
+import software.ulpgc.katas.model.UserExport;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -14,7 +16,7 @@ public class Main {
                     client, URI.create("https://randomuser.me/api/?results=10"));
 
             try (Reader input = source.read()) {
-
+                UserExport export = new JsonRandomUserDeserializer().deserialize(input);
             }
         }
 
