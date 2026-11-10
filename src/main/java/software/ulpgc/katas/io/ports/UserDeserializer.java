@@ -5,6 +5,6 @@ import software.ulpgc.katas.model.UserExport;
 
 import java.io.Reader;
 
-public interface UserDeserialize {
+public interface UserDeserializer {
     UserExport deserialize(Reader reader);
 }
