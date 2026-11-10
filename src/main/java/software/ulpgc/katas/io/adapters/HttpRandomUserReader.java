@@ -1,4 +1,4 @@
-package software.ulpgc.katas.io.adapters.Dtos;
+package software.ulpgc.katas.io.adapters;
 
 import software.ulpgc.katas.io.ports.RawDataReader;
 
